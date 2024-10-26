@@ -1,32 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Marriage Invitation</title>
+    <link rel="shortcut icon" href="assets/images/bgimage.jpg">
+    <script src="assets/js/home.js"></script>
     <style>
         body {
+            width: 100%;
+            height: 100%;
             background-color: white;
             text-align: center;
+            background-image: url('assets/images/bgimage.jpg');
         }
+
         h1 {
+            text-shadow: 3px 3px 3px rgb(0, 0, 0);
+            color: white;
             font-size: 48px;
             margin-bottom: 20px;
         }
+
         p {
+            text-shadow: 3px 3px 3px rgb(0, 0, 0);
+
+            color: white;
             font-size: 24px;
             margin-bottom: 40px;
         }
+
+        .buttontwo {
+            display: inline-block;
+            padding: 20px 40px;
+            border-radius: 50px;
+            background-color: rgb(74, 247, 88);
+            color: #414141;
+            border: none;
+            text-decoration: none;
+            margin: 10px;
+            cursor: pointer;
+            transition: background-color 0.2s ease-in-out;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        .buttontwo a {
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+        }
+
+        .buttontwo:hover {
+            background-color: hwb(112 15% 6%);
+        }
+
+        .preloader {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #fff;
+            /* Adjust background color as needed */
+            z-index: 9999;
+            /* Ensure it's on top */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .loading-spinner {
+            width: 50px;
+            height: 50px;
+            border: 4px solid #f3f3f3;
+            /* Adjust border color */
+            border-top: 4px solid #494848;
+            /* Adjust top border color */
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+        }
+
+        @keyframes spin {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
     </style>
 </head>
+
 <body>
+    <div class="preloader">
+        <div class="loading-spinner"></div>
+    </div>
+    <!-- <img src="assets/images/bgimage.jpg" alt=""> -->
     <h1>Marriage Invitation</h1>
     <p>We cordially invite you to celebrate the marriage of</p>
-    <p>Deepthi</p>
+    <p>Vinod H.K</p>
     <p>and</p>
-    <p>Vinod</p>
-    <p>On [Date] at [Time]</p>
-    <p>Venue: [Venue Address]</p>
-<!--     <p>Kindly RSVP to [Contact Information]</p> -->
+    <p>Deepthi R.S</p>
+    <p>On 19/01/2025</p>
+    <p>muhurtham : 11.00 am to 11:45 am</p>
+    <p>Venue: Sripadmam kalyanamandapam<br>muttaikadu</p>
+    <button class="buttontwo"><b><i class="fas fa-map-marker-alt"><a href="https://maps.app.goo.gl/A3gqNkvYuut3v1oe6">
+            </i> Location</b></a></button>
+    <!--     <p>Kindly RSVP to [Contact Information]</p> -->
 </body>
+
 </html>
