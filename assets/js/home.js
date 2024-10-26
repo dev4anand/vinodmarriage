@@ -11,12 +11,7 @@ window.onload = function() {
     video.play(); // Start playing the video
   });
 
-  function openModaltwo() {
-    var modal = document.getElementById("pdfModal");
-    var pdfViewer = document.getElementById("pdfViewer");
-    pdfViewer.src = "assets/images/VINOD.pdf";  // Set your PDF file URL here
-    modal.style.display = "block";  // Show the modal
-}
+
 
 function closeModaltwo() {
     var modal = document.getElementById("pdfModal");

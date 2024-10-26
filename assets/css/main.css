@@ -14,7 +14,7 @@ h1 {
 }
 
 p {
-    text-shadow: 3px 3px 3px rgb(0, 0, 0);
+    text-shadow: 2px 2px 2px rgb(0, 0, 0);
     color: white;
     font-size: 24px;
     margin-bottom: 30px;
@@ -158,8 +158,8 @@ button a {
 .modal-content-two {
     margin: auto;
     display: block;
-    width: 80%;
-    height: 35%;
+    width: 92%;
+    height: 40%;
     max-width: 800px;
 }
 

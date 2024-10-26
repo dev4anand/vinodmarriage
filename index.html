@@ -23,14 +23,19 @@
         <!-- Modal content (iframe) -->
         <iframe id="pdfViewer" class="modal-content-two"></iframe>
     </div>
-
-    
-
+    <script>
+        function openModaltwo() {
+            var modal = document.getElementById("pdfModal");
+            var pdfViewer = document.getElementById("pdfViewer");
+            pdfViewer.src = "assets/images/Vinod.pdf";  // Set your PDF file URL here
+            modal.style.display = "block";  // Show the modal
+        }
+    </script>
 
     <script>
         AOS.init();
     </script>
-     <div id="videoModal" class="modal">
+    <div id="videoModal" class="modal">
         <!-- Close button -->
         <span class="close" onclick="closeModal()">&times;</span>
         <!-- Modal content (video) -->
@@ -40,7 +45,7 @@
         </video>
     </div>
 
-    
+
     <div class="preloader">
         <div class="loading-spinner"></div>
     </div>
@@ -64,11 +69,11 @@
         </div>
         <div class="button-container">
             <button onclick="openModal()" class="button"><b><i class="fa-solid fa-video"></i>
-                 Engagemant Video
-               </button>
+                    Engagemant Video
+            </button>
             <button onclick="openModaltwo()" class="buttontwo"><b><i class="fa-solid fa-envelope"></i>
-                           
-                     Invitation Letter</b></button>
+
+                    Invitation Letter</b></button>
         </div>
 
     </div>
