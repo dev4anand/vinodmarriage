@@ -4,12 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
         integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Marriage Invitation</title>
     <link rel="shortcut icon" href="assets/images/bgimage.jpg">
     <script src="assets/js/home.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <style>
         body {
             width: 100%;
@@ -34,6 +36,31 @@
             margin-bottom: 40px;
         }
 
+
+
+        .button:hover {
+            background-color: hsl(324, 88%, 63%);
+        }
+
+        .button-container {
+            display: flex;
+            justify-content: center;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 20px 40px;
+            border-radius: 50px;
+            background-color: hwb(319 49% 0%);
+
+            color: #414141;
+            border: none;
+            margin: 10px;
+            cursor: pointer;
+            transition: background-color 0.2s ease-in-out;
+            -webkit-tap-highlight-color: transparent;
+        }
+
         .buttontwo {
             display: inline-block;
             padding: 20px 40px;
@@ -48,9 +75,15 @@
             -webkit-tap-highlight-color: transparent;
         }
 
+        button a {
+            text-decoration: none;
+            color: inherit;
+            font-weight: bold;
+        }
+
         .buttontwo a {
             text-decoration: none;
-            color: black;
+            color: inherit;
             font-weight: bold;
         }
 
@@ -97,21 +130,32 @@
 </head>
 
 <body>
+    <script>
+        AOS.init();
+    </script>
     <div class="preloader">
         <div class="loading-spinner"></div>
     </div>
-    <!-- <img src="assets/images/bgimage.jpg" alt=""> -->
-    <h1>Marriage Invitation</h1>
-    <p>We cordially invite you to celebrate the marriage of</p>
-    <p>Vinod H.K</p>
-    <p>and</p>
-    <p>Deepthi R.S</p>
-    <p>On 19/01/2025</p>
-    <p>muhurtham : 11.00 am to 11:45 am</p>
-    <p>Venue: Sripadmam kalyanamandapam<br>muttaikadu</p>
-    <button class="buttontwo"><b><i class="fas fa-map-marker-alt"><a href="https://maps.app.goo.gl/A3gqNkvYuut3v1oe6">
-            </i> Location</b></a></button>
-    <!--     <p>Kindly RSVP to [Contact Information]</p> -->
+    <div data-aos="fade-up">
+        <!-- <img src="assets/images/bgimage.jpg" alt=""> -->
+        <h1>Marriage Invitation</h1>
+        <p>We cordially invite you to celebrate the marriage of</p>
+        <p>Vinod H.K</p>
+        <p>and</p>
+        <p>Deepthi R.S</p>
+        <p>On 19/01/2025</p>
+        <p>muhurtham : 11.00 am to 11:45 am</p>
+        <p>Venue: Sripadmam kalyanamandapam<br>muttaikadu</p>
+        <div class="button-container">
+            <button class="button"><b><i class="fas fa-map-marker-alt"><a
+                            href="https://maps.app.goo.gl/rH2gQFE68EoZvnkH6">
+                    </i> Mandapam Location</b></a></button>
+            <button class="buttontwo"><b><i class="fas fa-map-marker-alt"><a
+                            href="https://maps.app.goo.gl/YLUS17Sk4Z6KG1Dw5">
+                    </i> Reception Location</b></a></button>
+        </div>
+
+    </div>
 </body>
 
 </html>
